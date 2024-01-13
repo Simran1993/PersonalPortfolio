@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  background: linear-gradient(black, rgb(5, 0, 0));
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  background: none;
+}
+header h1{
+  margin-left: 2%;
+  margin-top: 2%;
+}
+nav ul {
+  list-style: none;
+  
+  padding: 0%;
+  text-align: center;
+}
+
+nav li {
+  text-decoration: none;
+  display: inline;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav li button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+nav li button:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+/* page1 */
+#redd{
+  color: crimson;
+}
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+  order: 2;
+}
+
+.container .line {
+  width: 100%;
+  height: 100%;
+}
+
+.container h1 {
+  position: absolute;
+  font-size: 3rem;
+  line-height: 4.2rem;
+}
+#Mpfp {
+  margin-left: 170px; 
+}
+
+#Mpfp img {
+  background-color: #ffffff;
+}
+
+
+.container .Mpfp:hover {
+  transform: scale(1.1);
+}
+
+/* Make text lines bold */
+.container .line {
+  margin-left: 5%;
+  font-weight: bold;
+}
+
+.container.fade-in {
+  opacity: 100;
+  transform: translateY(10px);
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.container.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px; /* Add margin below the hobby section */
+}
+footer a {
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer p{
+  font-size: xx-small;
+}
+
+/* Style the hobby section */
+.hobby {
+  display: grid;
+  flex-direction: column; /* Change flexbox direction to column */
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+  margin-top: 20px; /* Add margin to separate from the content above */
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.hobby-description {
+  color: white;
+}
+
+.hobby p {
+  text-align: center;
+  padding: 10px; /* Add padding to space out the text */
+}
+
+/* Page 2*/
+.contact, .summary, .work-experience, .skills, .education {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px 0;
+  
+}
+
+.contact, .summary, .work-experience, .skills, .education h2 {
+  color: white;
+  text-align: left;
+}
+
+/* Style the links in the contact section */
+.contact a {
+  color: rgb(163, 52, 74);
+  text-decoration: none;
+  
+}
+
+/* Style the work experience and education items */
+.experience-item, .education-item {
+  margin: 20px 0;
+}
+
+.experience-item h3, .education-item h3 {
+  color: white;
+}
+
+/* Style the list of skills */
+.skills ul {
+  list-style-type: disc;
+  color: white;
+  
+}
+
+/* Style the GPA */
+.education-item strong {
+  color: #ffffff;
+}
+#icon{
+  width: 30px;
+  
+}
+#icon:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*form Page 4*/ 
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.2); /* Background color to match the hobby section */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Style form fields, labels, and Submit button */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  color: white;
+  padding: 10px;
+  margin: 10px auto; /* Center the input fields horizontally */
+  border-radius: 5px;
+  display: block;
+  width: 30%; /* Set the width as a percentage of the container width */
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border: 1px solid rgb(163, 52, 74);
+}
+
+.contact-form label {
+  color: white;
+  display: inline-block; /* Display labels inline with the input fields */
+  margin-right: 10px; /* Add spacing between labels and input fields */
+}
+
+.contact-form button {
+  background-color: rgb(163, 52, 74);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+  text-align: center; /* Set the button to block display for a new line */
+  margin-top: 10px; /* Add spacing between the button and the inputs */
+  
+}
+
+.contact-form button:hover {
+  transform: scale(1.1);
+}
+
+/* page 3rd For Proects */
+
+.ProjectsC{
+  position: relative;
+
+}
+
+.ProjectsC .ProjectsCon .Slide{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 9%;
+  padding-bottom: 70px;
+}
+
+.ProjectsC .ProjectsCon .Slide .ProContent{
+  flex:1 1 350px ;
+  animation:ProjectsCon .4s linear ,6s backwards;
+}
+@keyframes ProjectsCon {
+0%{
+  opacity: 0;
+  transform: translateX(-50px);
+}  
+}
+
+.ProjectsC .ProjectsCon .Slide .ProContent .ProImg{
+  flex:1 1 500px ;
+}
+
+.ProjectsC .ProjectsCon .Slide .ProContent .ProImg img{
+  width: 100%;
+  animation:img .4s linear;
+}
+@keyframes img {
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }  
+  }
+
+.ProjectsC .ProjectsCon .Slide .ProContent h3{
+  font-size: 35px;
+  color: aliceblue;
+}
+
+.ProjectsC .ProjectsCon .Slide .ProContent p{
+  font-size: 16px;
+  color: rgb(242, 245, 247);
+  padding: 10px 0;
+}
+
+.ProjectsC .ProjectsCon .Slide .ProContent .btn{
+  margin-top: 10px;
+  display: inline-block;
+  background-color:rgba(255, 255, 255, 0.1) ;
+  color: #ffffff;
+  font-size: 17px;
+  padding:9px 40px;
+
+}
+
+.ProjectsC .ProjectsCon .Slide .ProContent .btn:hover {
+  background-color:rgba(255, 255, 255, 0.6)  ;
+  transform: scale(1.1);
+}
+
+.ProjectsC .ProjectsCon{
+  display: none;
+}
+.ProjectsC .ProjectsCon.active{
+  display:block;
+}
+
+.ProjectsC .ProjectsCon:nth-child(1) .Slide{
+  background:linear-gradient(90deg,black 70%,crimson 30.1%);
+}
+.ProjectsC .ProjectsCon:nth-child(2) .Slide{
+  background:linear-gradient(90deg,black 70%,crimson 30.1%);
+}
+.ProjectsC .ProjectsCon:nth-child(3) .Slide{
+  background:linear-gradient(90deg,black 70%,crimson 30.1%);
+}
+.ProjectsC .ProjectsCon:nth-child(4) .Slide{
+  background:linear-gradient(90deg,black 70%,crimson 30.1%);
+} 
+.ProjectsC #prev,.ProjectsC #next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color:white;
+  background-color: rgba(255, 255, 255, 0.2) ;
+  height: 50px;
+  width: 50px;
+  line-height:50px;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.ProjectsC #prev:hover,.ProjectsC #next:hover{
+  background-color: rgba(255, 255, 255, 0.6) ;
+}
+
+.ProjectsC #prev{
+  left: 20px;
+}
+
+.ProjectsC #next{
+  right: 20px;
+}
+
+@media (max-width:500px){
+
+  .ProjectsC #prev{
+    left: 0px;
+    top: 60px;
+  }
+  
+  .ProjectsC #next{
+    right: 0px;
+    top: 60px;
+
+  }
+
+}
